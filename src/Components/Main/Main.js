@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Steps from "./MainComponents/Steps/Steps";
 import Form from "./MainComponents/Form/Form";
 import Donations from "./MainComponents/Donations";
