@@ -11,24 +11,11 @@ class Donations extends Component {
     this.changeDonation = this.changeDonation.bind(this);
   }
   changeDonation(donation) {
-    console.log(donation);
-
-    if (donation === 50) {
-      this.setState({ button50Active: true });
-      this.setState({ button70Active: false });
-      this.setState({ button100Active: false });
-    }
-
-    if (donation === 70) {
-      this.setState({ button50Active: false });
-      this.setState({ button70Active: true });
-      this.setState({ button100Active: false });
-    }
-    if (donation === 100) {
-      this.setState({ button50Active: false });
-      this.setState({ button70Active: false });
-      this.setState({ button100Active: true });
-    }
+    this.setState({
+      button50Active: donation === 50,
+      button70Active: donation === 70,
+      button100Active: donation === 100,
+    });
   }
   render() {
     return (
