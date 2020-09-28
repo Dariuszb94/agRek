@@ -26,7 +26,6 @@ To run this project, download a repo, then go to repo folder, open terminal:
 
 ```
 $ npm install
-$ npm run build
 $ npm run dev
 ```
 
